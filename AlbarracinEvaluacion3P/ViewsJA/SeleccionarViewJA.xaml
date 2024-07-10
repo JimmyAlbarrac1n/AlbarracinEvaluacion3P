@@ -3,14 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:AlbarracinEvaluacion3P.ViewModelsJA"
              x:Class="AlbarracinEvaluacion3P.ViewsJA.SeleccionarViewJA"
-             Title="SeleccionarViewJA">
+             Title="Seleccionar Episodio">
 
     <ContentPage.BindingContext>
         <vm:SeleccionarViewModelJA />
     </ContentPage.BindingContext>
     <StackLayout Padding="10">
         <Entry Placeholder="ID del Episodio" Text="{Binding Id}" Keyboard="Numeric" />
-        <Button Text="Buscar Episodio" Command="{Binding BuscarEpisodeCommand}" />
+        <Button Text="Buscar Episodio por ID" Command="{Binding BuscarEpisodeCommand}" />
         <Entry Placeholder="Nombre" Text="{Binding Name}" IsReadOnly="True" />
         <Entry Placeholder="AirDate" Text="{Binding Air_date}" IsReadOnly="True" />
         <Entry Placeholder="Episode" Text="{Binding Episode}" IsReadOnly="True" />

@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:AlbarracinEvaluacion3P.ViewModelsJA"
              x:Class="AlbarracinEvaluacion3P.ViewsJA.HistorialJA"
-             Title="HistorialJA">
+             Title="Episodios guardados">
     <ContentPage.BindingContext>
         <vm:HistorialViewModelJA />
     </ContentPage.BindingContext>
