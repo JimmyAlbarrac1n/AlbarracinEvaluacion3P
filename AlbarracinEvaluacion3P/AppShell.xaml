@@ -4,12 +4,20 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:AlbarracinEvaluacion3P"
+    xmlns:views="clr-namespace:AlbarracinEvaluacion3P.ViewsJA"
     Shell.FlyoutBehavior="Disabled"
     Title="AlbarracinEvaluacion3P">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <ShellContent
+     Title="Inicio"
+     ContentTemplate="{DataTemplate views:SeleccionarViewJA}"
+     Icon="{OnPlatform 'seleccione.png'}" 
+     />
+     <ShellContent
+    Title="Episodios Guardados"
+    ContentTemplate="{DataTemplate views:HistorialJA}"
+    Icon="{OnPlatform 'historial.png'}" />
+    </TabBar>
 
 </Shell>

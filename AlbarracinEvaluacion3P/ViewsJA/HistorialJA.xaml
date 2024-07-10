@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:AlbarracinEvaluacion3P.ViewModelsJA"
+             x:Class="AlbarracinEvaluacion3P.ViewsJA.HistorialJA"
+             Title="HistorialJA">
+    <ContentPage.BindingContext>
+        <vm:HistorialViewModelJA />
+    </ContentPage.BindingContext>
+    <StackLayout>
+        <ListView ItemsSource="{Binding SavedEpisodes}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="10">
+                            <StackLayout Orientation="Vertical" Padding="10,0,0,0">
+                                <Label Text="{Binding name}" FontAttributes="Bold" FontSize="Medium" />
+                                <Label Text="{Binding air_date}" FontSize="Small" />
+                                <Label Text="{Binding episode}" FontSize="Small" />
+                                <Label Text="{Binding url}" FontSize="Small" />
+                                <Label Text="{Binding created}" FontSize="Small" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

@@ -57,6 +57,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\historial.png" />
+	  <None Remove="Resources\Images\seleccione.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
@@ -67,9 +72,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="ViewsJA\" />
-	  <Folder Include="ViewModelsJA\" />
-	  <Folder Include="ServicesJA\" />
+	  <MauiXaml Update="ViewsJA\HistorialJA.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewsJA\SeleccionarViewJA.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
